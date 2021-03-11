@@ -1,8 +1,20 @@
 <br>
-<form>
-      Email : <input type="text" #txt1/><br><br>
-      Password : <input type="password" #txt2/>
-    <br>
-    <br>
-    <button (click)="onClickHandler(txt1,txt2)" type="submit">Submit</button>
-</form>    
+<form #form="ngForm">
+  <mat-card>
+    <mat-form-field>
+      <label>
+        <input matInput name="email" placeholder="Email" [(ngModel)]="email" required>
+      </label>
+    </mat-form-field>    
+
+    <mat-form-field>
+      <label>
+        <input matInput  type="password" name="password" placeholder="Password" [(ngModel)]="password" required>
+      </label>
+    </mat-form-field> 
+
+  </mat-card>
+  
+  <button mat-raised-button (click)="onClickHandler()" color="primary" [disabled]="form.invalid">Submit</button>
+</form>
+   

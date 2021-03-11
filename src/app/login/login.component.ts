@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
+
 
 @Component({
   selector: 'app-login',
@@ -6,8 +9,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+  constructor (private router: Router) {}
+
+  email = ''
+  password = ''
   
-  onClickHandler(email:any, password:any) {
-    window.alert("email : "+ email.value + " password : "+ password.value);
+  async onClickHandler() {
+    //window.alert(`email : '${this.email}', password : '${this.password}'`);
+    window.alert("No account found for this email");
+    //await this.router.navigateByUrl('/profile');
   }
+
+ 
 }

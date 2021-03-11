@@ -1,0 +1,28 @@
+.example-container .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
+
+  mat-card{
+      margin-left: 40em;
+      margin-Right: 40em;
+      margin-top: 10em;
+  }
+
+  mat-form-field{
+      
+      padding-right: 43em;
+      padding-left: 2em;
+      min-width: 150px;
+      max-width: 700px;
+      width: 700px;
+      height: 7em;
+  }
+
+  button{
+    margin-top: 2em;
+    margin-left: 40em;
+    min-width: 170px;
+    max-width: 900px;
+    width: 799px;
+    height: 3.5em;
+  }
