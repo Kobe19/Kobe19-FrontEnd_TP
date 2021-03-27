@@ -26,3 +26,9 @@
     width: 799px;
     height: 3.5em;
   }
+
+  .error-box {
+    margin-top: 1em;
+    background-color: #f44336;
+    color: white;
+  }
